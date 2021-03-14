@@ -17,7 +17,7 @@ CloudBuildでイメージをビルドする際にARGとして渡している
 
 追加手順
 
-1. [CloudBuild](https://console.cloud.google.com/cloud-build/triggers/edit/b420f08c-9a5f-437c-8c3d-0734e2b01cb3?project=buzz-connection&supportedpurview=project)の変数に値を追加
+1. [CloudBuild](https://console.cloud.google.com/cloud-build/triggers/edit/9bed96e1-6de1-453e-af54-ef3c6a7ddd31?folder=true&organizationId=609126643555&project=buzz-connection)の変数に値を追加
 2. cloudbuild.yamlで受け取った変数をビルドコマンドに渡すように書き換える
 3. DockerfileでARGを受け取ってENVに設定する
 4. 変更をmasterにpushする
