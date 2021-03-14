@@ -8,7 +8,7 @@ asia.gcr.io/buzz-connection/user-web
 
 
 ## 設定ファイルについて
-templetes/内にxxxxx.conf.templeteのようなテンプレートを設置すると、起動時に環境変数を注入してnginx.dに設置してくれる
+templetes/内にxxxxx.conf.templeteのようなテンプレートを設置すると、起動時に環境変数を注入してnginx.d/etc/nginx/conf.d/に設置される。
 
 
 ## 環境変数の設定方法
