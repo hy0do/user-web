@@ -1,0 +1,21 @@
+steps:
+# build image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build',
+         '--build-arg',
+         '_SERVER_NAME=${_SERVER_NAME}',
+         '--build-arg',
+         '_BACKEND_URL=${_BACKEND_URL}',
+         '-t',
+         '${_IMAGE_NAME}:${_IMAGE_TAG}',
+         'images/nginx']
+
+# push image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ["push", '${_IMAGE_NAME}:${_IMAGE_TAG}']
+
+timeout: 3600s
+
+substitutions:
+  _IMAGE_NAME: asia.gcr.io/buzz-connection/user-web
+  _IMAGE_TAG: $REVISION_ID
