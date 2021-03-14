@@ -1,20 +1,10 @@
-# nginx
+# user-web
 
-
-## このイメージの説明
-
-リクエストをrailsアプリケーションにプロキシするサーバー
-
-設定ファイルはtemplates/以下に設置する
+リクエストをuser-appにプロキシするwebサーバー
 
 ```
 asia.gcr.io/buzz-connection/user-web
 ```
-
-
-## 使用箇所
-- production
-  - nginxコンテナ
 
 
 ## 設定ファイルについて
